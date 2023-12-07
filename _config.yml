@@ -20,7 +20,6 @@ defaults:
     values:
       layout: "default"
 
-include: ["_blog"]
 
 plugins: [jekyll-paginate]
 paginate: 5
