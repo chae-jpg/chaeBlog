@@ -373,6 +373,7 @@ GEM
     unf_ext (0.0.9.1)
     unf_ext (0.0.9.1-x64-mingw-ucrt)
     unicode-display_width (1.8.0)
+    webrick (1.8.1)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -386,6 +387,7 @@ DEPENDENCIES
   github-pages (~> 228)
   jekyll-paginate
   rails
+  webrick (~> 1.8)
 
 BUNDLED WITH
    2.4.14
