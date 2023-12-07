@@ -1,0 +1,14 @@
+---
+layout: default
+title : Home
+---
+<marquee>이채원의 블로그에 오신 것을 환영합니다...</marquee>
+<h1 class="site-title">최신 포스트</h1>
+<div id="home-grid">
+    {% for post in site.posts limit:3 %}
+    <div class="home-list">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a> </h2>
+        <p>{{ post.excerpt }}</p>
+    </div>
+    {% endfor %}
+</div>

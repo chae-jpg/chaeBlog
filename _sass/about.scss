@@ -1,0 +1,37 @@
+#about-grid {
+    display: grid;
+    justify-content: center;
+    padding: 0 30px 30px 30px;
+    justify-items: center;
+    grid-template-columns: 80%;
+    grid-template-rows: 270px 6%;
+}
+#about-grid img{
+    display: block;
+}
+#link-flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    border: solid lightgrey;
+}
+#link-flex a{
+    color: white;
+    font-size: 120%;
+}
+#about-me {
+    width: 100%;
+    border: solid lightgrey;
+    border-top: none;
+}
+.about-text {
+    font-size: 120%;
+    line-height: 140%;
+}
+#about-inside {
+    padding: 15px;
+}
+#about-me h1 {
+    margin: 10px 0 10px 0;
+}

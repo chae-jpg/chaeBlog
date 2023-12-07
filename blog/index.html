@@ -1,0 +1,42 @@
+---
+layout: default
+title: Blog
+---
+<h1 class="site-title">모든 포스트</h1>
+<h4 id="post-count" style="color: lightgrey;">총 <b style="color:white;">{{ paginator.total_posts }}</b>개의 포스트가 있습니다.</h4>
+<ul>
+    {% for post in paginator.posts %}
+    <li>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a> </h2>
+        <p>{{ post.subtitle }}</p>
+    </li>
+    {% endfor %}
+</ul>
+
+<!-- 페이지네이터 링크 -->
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+  <!-- 이전 페이지가 있으면 -> prev에 a태그로 href 걸어줌.-->
+    <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+  {% else %}
+    <span>&laquo; Prev</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <em>{{ page }}</em>
+    {% elsif page == 1 %}
+      <a href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+  {% else %}
+    <span>Next &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}

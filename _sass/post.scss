@@ -1,0 +1,36 @@
+.post-title {
+    border-bottom: 1px lightgray solid;
+}
+.post-article {
+    line-height: 1.5em;
+    border-bottom: 1px lightgray solid;
+    margin: 0 20px 20px 20px;
+    font-size: 18px;
+}
+.post-buttons {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;   
+}
+.pre-nav {
+    display: block;
+    margin-bottom: 7px;
+    color: lightgray;
+}
+.pre-nav a {
+    text-decoration: none;
+}
+.pre-nav a:hover {
+    text-decoration: underline;
+}
+.next-nav {
+    display: block;
+    color: lightgray;
+    margin-bottom: 5px;
+}
+.next-nav a {
+    text-decoration: none;
+}
+.next-nav a:hover {
+    text-decoration: underline;
+}

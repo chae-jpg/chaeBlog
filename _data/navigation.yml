@@ -1,0 +1,10 @@
+- name: Home
+  link: /
+- name: About
+  link: /about.html
+- name: 모든 포스트
+  link: /blog/index.html
+- name: 카테고리
+  link: /categories.html
+- name: 음악추천
+  link: /music_rec.html

@@ -1,0 +1,13 @@
+<div id="nav">
+    <h1 id="main-title">채원이 블로그</h1>
+    <div class="pure-menu pure-menu-horizontal">
+        <a class="pure-menu-heading"></a>
+        <ul class="pure-menu-list">
+            {% for item in site.data.navigation %}
+            <li class="pure-menu-item {% if page.url == item.link %}current{% endif %}">
+                <a href="{{ item.link }}" class="pure-menu-link" >{{ item.name }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

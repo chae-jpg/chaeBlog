@@ -1,0 +1,87 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+a {
+    color: inherit;
+}
+a:visited {
+    color: inherit;
+}
+marquee {
+    margin-top : 2px;
+}
+.pure-menu-item a:visited {
+    color: black;
+}
+.current {
+    background-color: white;
+}
+.current a:hover, a:focus {
+    color: black;
+    display: inline-block;
+}
+.pure-menu-horizontal {
+    border-top: 6px double gray;
+}
+.pure-menu-list {
+    float: right;
+}
+#main-title{
+    display: inline;
+    text-align: center;
+    color: black;
+}
+#nav {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    background-color: lightgrey;
+}
+#home-grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0 30px 30px 30px;
+}
+.post-title {
+    margin: 0.5rem 0 0.5rem 0;
+    text-transform: none;
+}
+.home-list{
+    padding: 10px;
+    border: solid lightgrey;
+}
+.home-list a {
+    color: white;
+    text-decoration: none;
+}
+.home-list a:hover, a:focus {
+    color: lightgray;
+    display: inline-block;
+    text-decoration: underline;
+    transform: translateY(-2px);
+    transition: 1s;
+}
+.home-list a:visited {
+    color: white;
+}
+.post-title {
+    margin: 20px;
+}
+
+.site-title {
+    margin: 30px;
+    border-bottom: 2px solid gray;
+}
+
+footer {
+    margin: 0 20px 0 20px;
+    border-top: 1px solid gray;
+    text-align: center;
+}
+footer h3 {
+    margin-bottom: 0;
+}
+footer a:visited {
+    color: white;
+}

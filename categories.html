@@ -1,0 +1,10 @@
+---
+layout: default
+title : 카테고리
+---
+<h1 class="site-title">모든 카테고리</h1>
+<div id="cat_grid">
+  {% for category in site.categories %}
+    <a href="{{ site.url }}//category//{{ category[0] }}.html">{{ category[0] }}</a>
+  {% endfor %}
+</div>
