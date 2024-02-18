@@ -2,10 +2,26 @@
     display: grid;
     margin: 30px;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    justify-items: center;
-
+    grid-auto-rows: minmax(150px, auto);
+    place-items: center center;
 }
-#cat_grid a {
-    text-decoration: none;
+
+#cat-button {
+    display: block;
+    width: 80%;
+    height: 80%;
+    font-size: 180%;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    border-color: darkgrey;
+    border-radius: 1rem;
+    border-width: thick;
+    border-style: solid;
+    
+}
+#cat-button:hover,
+#cat-button:focus {
+    background-color: darkgrey;
+    color: black;
 }
