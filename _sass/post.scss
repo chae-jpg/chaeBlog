@@ -1,4 +1,5 @@
 .post-title {
+    text-transform: uppercase;
     border-bottom: 1px lightgray solid;
 }
 .post-article {
@@ -18,12 +19,14 @@
     color: lightgray;
 }
 .pre-nav a {
+    text-transform: uppercase;
     text-decoration: none;
 }
 .pre-nav a:hover {
     text-decoration: underline;
 }
 .next-nav {
+    text-transform: uppercase;
     display: block;
     color: lightgray;
     margin-bottom: 5px;
