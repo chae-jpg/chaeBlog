@@ -16,7 +16,19 @@
     
     <script>hljs.highlightAll();</script>
     <link rel="icon" type="image/png" href="/assets/favicon.ico">
-</head>
+    <!-- 수학 수식 1 -->
+	<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
+      
+        <!-- 수학 수식 2 -->
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    출처: https://rayc20.tistory.com/171 [Ray 수학:티스토리]
+  </head>
   <body>
     {% include navigation.html %}
     {{ content }}
